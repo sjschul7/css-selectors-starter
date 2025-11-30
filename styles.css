@@ -408,7 +408,7 @@ nav a:hover{
     select all of the inputs, labels, select dropdowns and text areas on the page by tag name
 */
 /* ----- */
-input, label, select, textarea{
+input,label,select,textarea{
     display: block;
     width: 95%;
     margin: 0.5rem auto;
@@ -422,7 +422,7 @@ input, label, select, textarea{
     select all of the inputs and selects by tag name
 */
 /* ----- */
-input, select{
+input,select{
     height: 2rem;
     border: 2px solid var(--dk-gray);
 }
@@ -466,7 +466,7 @@ label{
     select the spans in the form using the class name selector
 */
 /* ----- */
-.required{
+span.required{
     font-size: 1.5rem;
     font-weight: bold;
     display: inline;
@@ -610,7 +610,7 @@ li::marker{
     select the first div in the more styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#more > div{
+#more>div{
     width: 300px;
     height: 300px;
     background-color: var(--dv-red);
@@ -659,7 +659,7 @@ li::marker{
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more div.last{
+#more div.inner{
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
@@ -713,7 +713,7 @@ li::marker{
     select the SVGs in the software section using the ID, tag name, and descendant selectors
 */
 /* ----- */
-#software svg{
+#software a svg{
     stroke: var(--dk-gray);
 }
 
@@ -759,7 +759,7 @@ caption{
     select the table header cells in the table styles section using the element/tag name, descendant, and ID selectors
 */
 /* ----- */
-#table thead{ 
+#table thead tr th{ 
     background-color: var(--blue);
     color: var(--white);
 }
@@ -770,7 +770,7 @@ caption{
     select the odd table rows in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
- tbody:nth-child(odd){
+ tbody tr:nth-child(odd){
     background-color: var(--dv-orange);
 }
 
@@ -780,7 +780,7 @@ caption{
     select the first column in the table body of the table styles section using the element/tag name and the pseudo-class selectors
 */
 /* ----- */
-tbody:first{ 
+tbody tr td:first-child{ 
     font-weight: bold;
 }
 
